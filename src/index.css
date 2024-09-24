@@ -49,17 +49,15 @@ body {
 }
 
 .fixed-footer {
-  background-color: rgba(255, 255, 255, 0); /* زمینه کمی شفاف */
-  text-align: left; /* متن را به سمت چپ تراز می‌کنیم */
-  padding: 10px;
   position: fixed;
   bottom: 0;
-  left: 0; /* تعیین مکان فوتر در گوشه سمت چپ */
-  z-index: 9999; /* قرار دادن فوتر بالاتر از همه عناصر */
-  pointer-events: none; /* جلوگیری از تعامل با فوتر */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* اضافه کردن یک سایه ملایم */
+  left: 0;
+  background-color: rgba(255, 255, 255, 0); /* زمینه کمی شفاف */
+  text-align: center; /* متن وسط‌چین */
+  padding: 10px; /* حاشیه داخلی */
+  z-index: 1000; /* اطمینان از اینکه فوتر بالای دیگر المان‌ها قرار گیرد */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* اضافه کردن یک سایه ملایم */
 }
-
 .footer-content {
   display: flex; /* استفاده از فلکس برای چیدمان افقی */
   align-items: center; /* تراز کردن عمودی متن‌ها */

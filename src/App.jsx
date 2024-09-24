@@ -142,7 +142,13 @@ function App() {
                 alignContent: "center",
               }}
             >
-              Ali Jamali
+              <a
+                href="https://github.com/Alijamali"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ali Jamali
+              </a>
             </p>
           </div>
         </footer>
