@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wdth,wght,YTLC@6..12,75,600,448&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  height: 100%;
+  /* تنظیم ارتفاع کامل برای html و body */
+  margin: 0;
+  /* حذف حاشیه‌های پیش‌فرض */
+
+  font-family: "Sansita", sans-serif;
+}
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* اطمینان از اینکه نوار در بالای سایر عناصر قرار گیرد */
+}
+
+.app-container {
+  height: 100%;
+  padding: 20px;
+  margin-top: 55px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* می‌توانید این را به center تغییر دهید اگر می‌خواهید همه چیز در مرکز باشد */
+  justify-content: center; /* مرکز قرار دادن محتوا */
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #b6deec, #ebf4f6);
+}
+
+.row {
+  width: 100%; /* اطمینان از اینکه ردیف تمام عرض را اشغال کند */
+  display: flex; /* استفاده از flexbox برای ردیف */
+  flex-wrap: wrap; /* اجازه به ردیف برای شکستن */
+  justify-content: center; /* مرکز قرار دادن محتوا */
+}
+
+/* تنظیمات برای نمایش کامپوننت‌ها در 4 ستون */
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 ستون با عرض مساوی */
+  gap: 20px;
+  /* فاصله بین کامپوننت‌ها */
+  padding: 0px;
+  margin: 0px;
+}
+
+.fixed-footer {
+  background-color: rgba(255, 255, 255, 0); /* زمینه کمی شفاف */
+  text-align: left; /* متن را به سمت چپ تراز می‌کنیم */
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0; /* تعیین مکان فوتر در گوشه سمت چپ */
+  z-index: 9999; /* قرار دادن فوتر بالاتر از همه عناصر */
+  pointer-events: none; /* جلوگیری از تعامل با فوتر */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* اضافه کردن یک سایه ملایم */
+}
+
+.footer-content {
+  display: flex; /* استفاده از فلکس برای چیدمان افقی */
+  align-items: center; /* تراز کردن عمودی متن‌ها */
+}
+
+.footer-content p {
+  margin: 0 2px; /* حذف حاشیه */
+}

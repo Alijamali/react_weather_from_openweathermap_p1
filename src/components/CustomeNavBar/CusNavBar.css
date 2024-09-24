@@ -1,0 +1,47 @@
+/* فایل CSS برای حالت موبایل */
+@media (max-width: 768px) {
+    .custom-navbar .container {
+        width: 100%;
+        /* عرض کامل در حالت موبایل */
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .brand-name {
+        white-space: nowrap;
+        /* جلوگیری از رفتن به خط دوم */
+        font-size: 12px;
+        /* کاهش سایز فونت در موبایل */
+    }
+
+    .custom-navbar div {
+        gap: 5px;
+        /* کاهش فاصله بین لوگو و برند در موبایل */
+    }
+
+    .custom-navbar form {
+        max-width: 200px;
+        /* محدود کردن عرض نوار جستجو در موبایل */
+    }
+}
+
+
+.suggestions-list {
+    position: absolute; /* حفظ موقعیت در بالای دیگر المان‌ها */
+    width: calc(100% - 55px); /* عرض برابر با فیلد ورودی با در نظر گرفتن حاشیه */
+    max-height: 200px; /* حداکثر ارتفاع لیست */
+    overflow-y: auto; /* اجازه اسکرول در صورت زیاد بودن آیتم‌ها */
+    background-color: white; /* رنگ پس‌زمینه */
+    border: 1px solid #ccc; /* حاشیه */
+    z-index: 1000; /* مطمئن شوید که بالاتر از سایر عناصر قرار گیرد */
+    top: 100%; /* قرار دادن دقیقاً زیر فرم */
+    left: 0; /* تنظیم موقعیت چپ */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* اضافه کردن سایه برای زیبایی */
+    margin-top: 5px; /* فاصله از بالای لیست تا فرم */
+  }
+  
+  
+  

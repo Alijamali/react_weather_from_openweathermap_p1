@@ -1,0 +1,114 @@
+.weather {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  height: 100%;
+}
+
+.component-item {
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.component-item:hover {
+  transform: scale(1.05);
+}
+
+.remove-button-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none; /* مخفی به صورت پیش‌فرض */
+}
+
+.color-squares {
+  position: absolute;
+  top: 10px;
+  right: 50px; /* موقعیت مربع‌ها */
+  display: flex;
+  gap: 10px;
+}
+
+.color-square {
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  border: 2px solid white; /* بردر سفید دور مربع */
+  border-radius: 4px; /* گرد کردن گوشه‌های مربع (اختیاری) */
+  cursor: pointer;
+}
+
+.color1 {
+  background-color: rgb(155, 83, 83);
+}
+
+.color2 {
+  background-color: rgb(107, 197, 107);
+}
+
+.color3 {
+  background-color: rgb(207, 193, 72);
+}
+.color4 {
+  background-color: rgb(177, 93, 196);
+}
+.color5 {
+  background-color: rgb(37, 27, 188);
+}
+
+.component-item:hover .remove-button-container {
+  display: block; /* نمایان کردن دکمه هنگام هاور */
+}
+
+.component-item:hover .color-squares {
+  display: flex; /* نمایان کردن مربع‌ها هنگام هاور */
+}
+
+.weather-icon {
+  width: 150px;
+  height: 150px;
+  margin: 30px 0;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.location {
+  color: #fff;
+  font-size: 40px;
+}
+
+.weather-data {
+  width: 100%;
+  margin-top: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+
+.weather-data .col img {
+  width: 15px;
+  margin-top: 10px;
+  align-items: center;
+}
